@@ -50,9 +50,26 @@ $ git clone https://github.com/Mohit-Shukla-EQ/website.git
 # to create react app first go to parent dir 
 npx create-react-app website
 
+# discard the unwanted files created by react app template
+rm -rf public
+rm -rf src
+README.old.md 
+rm package.json 
+rm .gitignore
+
+# Grab online updates and merge them with your local server when needed
+$ git pull origin main
+
 ```
 
+# Allow inbound calls to the server
+1. Go to EC2 instance => security => security groups => inbound rules => edit inbound rule
+1. Add a new inbounce rule as {Type : Custom TCP, port: 3000, source: AnywhereIPv4}. Save
+
+
+
+# start the server
 ```sh
-# Grab online updates and merge them with your local server when needed
-$ git pull remotename branchname
+cd website
+npm start
 ```
