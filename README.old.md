@@ -46,10 +46,6 @@ sudo apt update
 # Clones a repository to your server
 $ git clone https://github.com/Mohit-Shukla-EQ/website.git
 
-# add react
-# to create react app first go to parent dir 
-npx create-react-app website
-
 ```
 
 ```sh
