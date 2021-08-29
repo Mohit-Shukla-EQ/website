@@ -1,5 +1,5 @@
 # website
-This is a new repo
+A website builder to easily make websites.
 
 # Installation
 1. Setup your server (ex: AWS EC2)
@@ -66,7 +66,11 @@ $ git pull origin main
 1. Go to EC2 instance => security => security groups => inbound rules => edit inbound rule
 1. Add a new inbounce rule as {Type : Custom TCP, port: 3000, source: AnywhereIPv4}. Save
 
+# install dependencies
+```sh
+npm install --save react-router-dom
 
+```
 
 # start the server
 ```sh
