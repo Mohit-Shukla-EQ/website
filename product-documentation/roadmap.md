@@ -18,7 +18,7 @@ On test and prod servers, instead of cloning users should download zip from repo
         - **components**
         - **add-ons**: ignored when repository is pulled from git from server 
         - **data**
-            - **delievered-data**: delievred via git repo
+            - **delivered-data**: delievred via git repo
                 - **assets**
                     - **brand**
                     - **images**
