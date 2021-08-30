@@ -1,9 +1,3 @@
-# website
-A website builder to easily make websites.
-
-[Duck Duck Go](https://duckduckgo.com "The best search engine for privacy")
-[Duck Duck Go](./product-documentation/how-to/install.md "The best search engine for privacy")
-
 # Installation
 1. Setup your server (ex: AWS EC2)
 
