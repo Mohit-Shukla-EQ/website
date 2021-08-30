@@ -40,7 +40,7 @@ class SimpleNavbar extends React.Component {
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
-              src="/assets/brand/bootstrap-logo.svg"
+              src="/assets/delivered-assets/brand/bootstrap-logo.svg"
               alt=""
               width="30"
               height="24"

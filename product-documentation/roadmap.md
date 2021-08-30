@@ -1,38 +1,18 @@
 # Direction
 Enable new people to easily and quickly intall and setup a static site.
 
+# add more componments 
+start making react components for BS components
+create a library to show components, their json-schemas and documentations  
+add a component for BS card. use that in album.
+
+add component for about page
+1. show a markdown
+1. show a team with placeholder images (use BS album example with image configurable as square or circle)
+
+## write steps for developers on how to add components
 
 
-# Data (to be implemented)
-> ## Next User stories
-> 1. Site admin should be able to pull all **system data** along with the code from repo.
-> 1. Site admin should be able to maintain **site specific data** which contains site configurations, content of pages , etc. This is called **Master Data**. This should be not be overwritten each time admin pulls from repository.
-
-## Folder structure
-
-
-- **website** : applicaiton folder cloned from git
-    - **public**
-    - **src**
-        - **components**
-        - **add-ons**: ignored when repository is pulled from git from server 
-        - **data**
-            - **delivered-data**: delievred via git repo
-                - **assets**
-                    - **brand**
-                    - **images**
-                - **deliverred sample customisation**: in form of json collections
-                - **product-documentation**
-            - **site-specific-data**: ignored when repository is pulled from git from server 
-                - **assets**
-                    - **brand**
-                    - **images**
-                - **site configurations**: in form of json collections
-                - **content**: 
-                    - **pages**
-                    - **blogs**
-                    - **page divisions**
-                    - **contents**
-                    - **products**
-                    - etc
+# create json-scehma for all components so that checks can be performed during creation
+# page to show component library
 
