@@ -1,8 +1,7 @@
 # Direction
 Enable new people to easily and quickly intall and setup a static site.
 
-# installaiton steps
-On test and prod servers, instead of cloning users should download zip from repo. 
+
 
 # Data (to be implemented)
 > ## Next User stories

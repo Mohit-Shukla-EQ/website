@@ -1,7 +1,7 @@
 import React from "react";
 import CenteredHero from "../../Centered-Hero/Cenetered-Hero";
 import TextImageColumnsHero from '../../Text-Image-Columns-Hero/Text-Image-Columns-Hero';
-import * as pageOptions from "./home-page.json";
+import * as pageOptions from '../../../data/site-specific-data/content/pages/home-page.json';
 
 class HomePage extends React.Component {
   render() {
