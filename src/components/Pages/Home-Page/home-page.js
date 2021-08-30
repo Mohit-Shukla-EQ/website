@@ -1,6 +1,6 @@
 import React from "react";
 import CenteredHero from "../../Centered-Hero/Cenetered-Hero";
-import TextImageColumnsHero from "../../Text-Image-Columns-Hero/Text-Image-Columns-Hero";
+import TextImageColumnsHero from '../../Text-Image-Columns-Hero/Text-Image-Columns-Hero';
 import * as pageOptions from "./home-page.json";
 
 class HomePage extends React.Component {

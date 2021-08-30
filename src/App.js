@@ -1,7 +1,7 @@
 import './App.css';
-import HomePage from './Pages/Home-Page/home-page';
-import SimpleNavbar from './Navbars/Simple-NavBar/Simple-Navbar';
-import About from './About/About';
+import HomePage from './components/Pages/Home-Page/home-page';
+import SimpleNavbar from './components/Navbars/Simple-NavBar/Simple-Navbar';
+import About from './components/About/About';
 
 import {
   BrowserRouter as Router,

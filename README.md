@@ -62,17 +62,17 @@ $ git pull origin main
 
 ```
 
-# Allow inbound calls to the server
+## Allow inbound calls to the server
 1. Go to EC2 instance => security => security groups => inbound rules => edit inbound rule
 1. Add a new inbounce rule as {Type : Custom TCP, port: 3000, source: AnywhereIPv4}. Save
 
-# install dependencies
+## Install dependencies
 ```sh
 npm install --save react-router-dom
 
 ```
 
-# start the server
+## Start the server
 ```sh
 cd website
 npm start

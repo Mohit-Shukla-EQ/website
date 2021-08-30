@@ -1,5 +1,5 @@
 import React from "react";
-import * as siteConfiguration from "../../data/site-configuration.json";
+import * as siteConfiguration from "../../../data/site-configuration.json";
 import Dropdown from "../../Dropdown/Dropdown";
 
 class SimpleNavbar extends React.Component {
