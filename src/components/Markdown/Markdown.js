@@ -1,9 +1,8 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import * as texts from '../../data/site-specific-data/content/collections/texts.json'
 import markdownList from '../../data/site-specific-data/content/collections/texts'
 
-const markdown = `
+/* const markdown = `
   # Header 1 New
   ## Header 2
 
@@ -22,7 +21,7 @@ const markdown = `
     >
     > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
     
-  `;
+  `; */
 
   class Markdown extends React.Component {
     render() {

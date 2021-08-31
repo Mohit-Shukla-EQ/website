@@ -40,10 +40,10 @@ class SimpleNavbar extends React.Component {
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
-              src="/assets/delivered-assets/brand/bootstrap-logo.svg"
-              alt=""
-              width="30"
-              height="24"
+              src="/assets/delivered-assets/brand/eq-logo-red-16x10.svg"
+              /* alt="" */
+              height="40px"
+              
             />
           </a>
           {/* Nav bar togeler button for small screens */}

@@ -2,8 +2,12 @@
 Enable new people to easily and quickly intall and setup a static site.
 
 # add more componments 
-start making react components for BS components
+setup the prod site on aws like getbootstrap site. 
+name of sie could be **eq**. The product will be called **eq**
+eventual site coule be eq.eqtribe.com
 create a library to show components, their json-schemas and documentations  
+start making react components for BS components
+
 add a component for BS card. use that in album.
 
 add component for about page
