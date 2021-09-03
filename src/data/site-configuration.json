@@ -7,6 +7,11 @@
         "linkTo" : "/"
       },
       { 
+        "label": "Docs",
+        "className" : "nav-item",
+        "linkTo" : "/docs/introduction"
+      },
+      { 
         "label": "About",
         "className" : "nav-item",
         "linkTo" : "/about"
@@ -17,28 +22,6 @@
         "linkTo" : "/users"
       },
       { "label": "Dropdown 1",
-        "className" : "dropdown",
-        "dropdownItems" : [
-          { 
-            "label": "Action",
-            "className" : "dropdown-item"
-          },
-          { 
-            "label": "Another Action",
-            "className" : "dropdown-item"
-          },
-          { 
-            "label": "Something Else",
-            "className" : "dropdown-item"
-          }
-
-        ]
-      },
-      { 
-        "label": "Link 2",
-        "className" : "nav-item"
-      },
-      { "label": "Dropdown 2",
         "className" : "dropdown",
         "dropdownItems" : [
           { 

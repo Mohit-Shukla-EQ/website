@@ -20,12 +20,12 @@ class CollapsibleSidebar extends React.Component {
                 >
                   {item.label}
                 </button>
-                <div class="collapse hide" id={item.label.replace(" ", "-")}>
+                <div class="collapse " id={item.label.replace(" ", "-")}>
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     {item.listItems.map((listItem) => {
                       return (
                         <li>
-                          <a href="#" class="link-dark rounded">
+                          <a href={listItem.linkTo} class="link-dark rounded">
                             {listItem.label}
                           </a>
                         </li>

@@ -2,12 +2,15 @@ import './App.css';
 import HomePage from './components/Pages/Home-Page/home-page';
 import SimpleNavbar from './components/Navbars/Simple-NavBar/Simple-Navbar';
 import About from './components/About/About';
+import Articles from 'components/Articles/Articles';
+import Article from "components/Articles/Article"
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useParams
 } from "react-router-dom";
 
 
@@ -31,8 +34,7 @@ function App() {
           </ul>
         </nav> */}
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+
         <Switch>
           <Route path="/about">
             <About />
@@ -40,17 +42,18 @@ function App() {
           <Route path="/users">
             <Users />
           </Route>
+{/*           <Route path="/docs">
+            <Docs />
+          </Route> */}
+          <Route path="/docs/concepts/:id" children={<Child />} />
+          <Route path="/docs/:id" children={<Child />} />
           <Route path="/">
           <HomePage />
           </Route>
         </Switch>
       </div>
     </Router>
-
-     
-
-
-    </div>
+  </div>
   );
 }
 
@@ -58,6 +61,18 @@ function App() {
 
 function Users() {
   return <h2>Users</h2>;
+}
+
+function Child() {
+  // We can use the `useParams` hook here to access
+  // the dynamic pieces of the URL.
+  let { id } = useParams();
+
+  return (
+    <div>
+      <Articles pageId={id} />
+    </div>
+  );
 }
 
 export default App;
