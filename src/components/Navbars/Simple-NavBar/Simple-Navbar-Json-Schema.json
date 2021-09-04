@@ -1,0 +1,38 @@
+{
+    "title": "options",
+    "description": "Configuration options of navigaiton bar",
+    "examples": [
+        {
+            "colorScheme": "navbar-light",
+            "backgroundColorClass": "bg-light",
+            "backgroundColor": "#e3f2fd"
+        }
+    ],
+    "properties": {
+        "colorScheme": {
+            "type": "string",
+            "title": "The Color Scheme",
+            "description": "Color scheme can be light or dark",
+            "default": "",
+            "enum": ["navbar-light", "navbar-dark"]
+        },
+        "backgroundColorClass": {
+            "type": "string",
+            "title": "Background Color Class",
+            "description": "Bootstrap class for background color ",
+            "default": "",
+            "examples": [
+                "bg-light", "", "bg-dark"
+            ]
+        },
+        "backgroundColor": {
+            "type": "string",
+            "title": "Background Color",
+            "description": "Any color other than standard bootstrap classes like primary, secondary, dark, etc. Could be any of standard color names: https://www.w3schools.com/colors/colors_hex.asp. Or these could be any hex values like #00bfff. If backgroundColor is specified, backgroundColorClass gets ignored",
+            "default": "",
+            "examples": [
+                "#e3f2fd", "red", "black"
+            ]
+        }
+    }
+}

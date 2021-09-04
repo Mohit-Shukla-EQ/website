@@ -2,6 +2,10 @@ import React from "react";
 import * as siteConfiguration from "../../../data/site-configuration.json";
 import Dropdown from "../../Dropdown/Dropdown";
 
+const logo = "/assets/delivered-assets/brand/site-logo.svg"
+
+
+
 class SimpleNavbar extends React.Component {
   renderMenuItems() {
     let jsx = [];
@@ -36,11 +40,19 @@ class SimpleNavbar extends React.Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav 
+          className={"navbar navbar-expand-md " 
+                    + siteConfiguration.siteMenu.options.colorScheme + " "
+                    + ((siteConfiguration.siteMenu.options.backgroundColor.length > 0)? "" : siteConfiguration.siteMenu.options.backgroundColorClass)
+                    }
+          style={{"backgroundColor" : siteConfiguration.siteMenu.options.backgroundColor}}
+
+            
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
-              src="/assets/delivered-assets/brand/eq-logo-red-16x10.svg"
+              src={logo}
               /* alt="" */
               height="40px"
               

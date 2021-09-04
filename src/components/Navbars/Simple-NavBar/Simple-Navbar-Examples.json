@@ -1,0 +1,45 @@
+{
+    "siteMenu": {
+      "options" : {
+        "colorScheme" : "navbar-light",
+        "backgroundColorClass" : "bg-light",
+        "backgroundColor" : "#e3f2fd"
+      },
+      "items": [
+        { 
+          "label": "Home",
+          "className" : "nav-item",
+          "linkTo" : "/"
+        },
+        { "label": "Features",
+          "className" : "dropdown",
+          "dropdownItems" : [
+            { 
+              "label": "Action",
+              "className" : "dropdown-item"
+            },
+            { 
+              "label": "Another Action",
+              "className" : "dropdown-item"
+            },
+            { 
+              "label": "Something Else",
+              "className" : "dropdown-item"
+            }
+  
+          ]
+        },
+        { 
+          "label": "Docs",
+          "className" : "nav-item",
+          "linkTo" : "/docs/introduction"
+        },
+        { 
+          "label": "About",
+          "className" : "nav-item",
+          "linkTo" : "/about"
+        }
+      ]
+    }
+  }
+  

@@ -3,12 +3,6 @@ import { docco, dark, a11yDark } from "react-syntax-highlighter/dist/esm/styles/
 //import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
-/* const code =`
-git clone https://github.com/Mohit-Shukla-EQ/website.git 
-npm install -y
-mkdir test
-` */
-
 const installation = (
   <div>
     <h1 id="installation">Installation</h1>
@@ -33,7 +27,6 @@ npm install
 npm start`
         }
     </SyntaxHighlighter>
-    <span className="display-6">That&#39;s it !!!</span>
     <p>
        Open (
       <a href="http://localhost:3000" id="isPasted">

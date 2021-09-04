@@ -39,9 +39,6 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
 {/*           <Route path="/docs">
             <Docs />
           </Route> */}
@@ -57,11 +54,6 @@ function App() {
   );
 }
 
-
-
-function Users() {
-  return <h2>Users</h2>;
-}
 
 function Child() {
   // We can use the `useParams` hook here to access
