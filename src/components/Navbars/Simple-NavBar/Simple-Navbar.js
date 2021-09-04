@@ -1,5 +1,5 @@
 import React from "react";
-import * as siteConfiguration from "../../../data/site-configuration.json";
+import * as siteConfiguration from "data/site-specific-data/site-configuration.json";
 import Dropdown from "../../Dropdown/Dropdown";
 
 const logo = "/assets/delivered-assets/brand/site-logo.svg"

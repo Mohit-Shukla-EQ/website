@@ -1,26 +1,25 @@
-import './App.css';
-import HomePage from './components/Pages/Home-Page/home-page';
-import SimpleNavbar from './components/Navbars/Simple-NavBar/Simple-Navbar';
-import About from './components/About/About';
-import Articles from 'components/Articles/Articles';
-import Article from "components/Articles/Article"
+import "./App.css";
+import HomePage from "./components/Pages/Home-Page/home-page";
+import SimpleNavbar from "./components/Navbars/Simple-NavBar/Simple-Navbar";
+import About from "./components/About/About";
+import Articles from "components/Articles/Articles";
+import Article from "components/Articles/Article";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  useParams
+  useParams,
 } from "react-router-dom";
-
 
 function App() {
   return (
     <div className="App">
       <SimpleNavbar />
       <Router>
-      <div>
-{/*         <nav>
+        <div>
+          {/*         <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -34,26 +33,24 @@ function App() {
           </ul>
         </nav> */}
 
-
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-{/*           <Route path="/docs">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            {/*           <Route path="/docs">
             <Docs />
           </Route> */}
-          <Route path="/docs/concepts/:id" children={<Child />} />
-          <Route path="/docs/:id" children={<Child />} />
-          <Route path="/">
-          <HomePage />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  </div>
+            <Route path="/docs/concepts/:id" children={<Child />} />
+            <Route path="/docs/:id" children={<Child />} />
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
-
 
 function Child() {
   // We can use the `useParams` hook here to access

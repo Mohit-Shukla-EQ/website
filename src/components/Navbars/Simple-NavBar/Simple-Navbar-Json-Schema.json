@@ -3,9 +3,14 @@
     "description": "Configuration options of navigaiton bar",
     "examples": [
         {
+            "description": "A simple light colored navigation bar.",
+            "colorScheme": "navbar-light",
+            "backgroundColorClass": "bg-light"
+        },
+        {
             "colorScheme": "navbar-light",
             "backgroundColorClass": "bg-light",
-            "backgroundColor": "#e3f2fd"
+            "backgroundColor": "red"
         }
     ],
     "properties": {
@@ -19,7 +24,7 @@
         "backgroundColorClass": {
             "type": "string",
             "title": "Background Color Class",
-            "description": "Bootstrap class for background color ",
+            "description": "Bootstrap class for background color. Refer: https://getbootstrap.com/docs/5.0/utilities/background/ ",
             "default": "",
             "examples": [
                 "bg-light", "", "bg-dark"
