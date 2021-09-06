@@ -24,7 +24,7 @@ class TextImageColumnsHero extends React.Component {
               {this.props.options.buttons.map((button) => (
               <a
                 href={button.href}
-                className={"btn btn-lg px-4 gap-3 " + "btn-" + (button.bootstrap.outline? "" : "outline-") + button.bootstrap.buttonStyle  }
+                className={"btn btn-lg px-4 gap-3 btn-" + (button.bootstrap.outline? "" : "outline-") + button.bootstrap.buttonStyle  }
                 role="button"
               >
                 {button.label}

@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Centered hero",
+  "description": "A highly configurable panel with an image, heading, paragraph and a few buttons ",
+  "type": "object",
+  "examples": [
+    {
+      "content": {
+        "title": "Simple Centered hero!",
+        "paragraph": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
+        "showComponentConfiguration": false,
+        "image": {
+          "source": "/assets/delivered-assets/brand/bootstrap-logo.svg",
+          "width": 72,
+          "height": 57
+        }
+      },
+      "buttons": [
+        {
+          "label": "START NOW",
+          "bootstrap": {
+            "buttonStyle": "primary",
+            "outline": true
+          },
+          "href": "http://www.google.com"
+        },
+        {
+          "label": "READ MORE",
+          "bootstrap": {
+            "buttonStyle": "secondary",
+            "outline": true
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "title": "Heading in Center",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "showComponentConfiguration": false,
+        "image": {
+          "source": "/assets/delivered-assets/brand/bootstrap-logo.svg",
+          "width": 72,
+          "height": 57
+        }
+      },
+      "buttons": [
+        {
+          "label": "START NOW",
+          "bootstrap": {
+            "buttonStyle": "primary",
+            "outline": false
+          },
+          "href": "http://www.google.com"
+        },
+        {
+          "label": "READ MORE",
+          "bootstrap": {
+            "buttonStyle": "secondary",
+            "outline": true
+          }
+        }
+      ],
+      "showComponentConfiguration": true
+    },
+    {
+      "background": "bg-danger",
+      "textColor": "text-white",
+      "content": {
+        "title": "With background color",
+        "paragraph": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
+        "showComponentConfiguration": false,
+        "image": {
+          "source": "/assets/delivered-assets/brand/bootstrap-logo.svg",
+          "width": 72,
+          "height": 57
+        }
+      },
+      "buttons": [
+        {
+          "label": "START NOW",
+          "bootstrap": {
+            "buttonStyle": "light",
+            "outline": false
+          },
+          "href": "http://www.google.com"
+        },
+        {
+          "label": "READ MORE",
+          "bootstrap": {
+            "buttonStyle": "light",
+            "outline": true
+          }
+        }
+      ],
+      "showComponentConfiguration": true
+    }
+  ],
+  "properties": {
+    "showComponentConfiguration": {
+      "description": "if true it will show the JSON in view and edit format below the component",
+      "type": "boolean",
+      "default": false
+    },
+    "background": {
+      "type": "string",
+      "description": "Bootstarp class to specify background",
+      "readMore": "https://getbootstrap.com/docs/5.0/utilities/background"
+    },
+    "height": {
+      "type": "string",
+      "description": "CSS height. Height could be entered in pixels - like 100px. Height could also be entered as relative to screen (viewport) - 80vh. To design nice looking panels, we recommend height in vh units. To show the panel full screen, set height: 100vh. To cover 50% of screen height, set height: 50vh",
+      "readMore": "https://www.w3schools.com/cssref/css_units.asp"
+    },
+
+    "content": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "paragraph": {
+          "type": "string"
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "source": {
+              "type": "string"
+            },
+            "width": {
+              "type": "integer"
+            },
+            "height": {
+              "type": "integer"
+            }
+          },
+          "required": ["source", "width", "height"]
+        }
+      },
+      "required": ["title", "paragraph", "image"]
+    },
+    "buttons": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "bootstrap": {
+              "type": "object",
+              "properties": {
+                "buttonStyle": {
+                  "type": "string"
+                },
+                "outline": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["buttonStyle", "outline"]
+            },
+            "href": {
+              "type": "string"
+            }
+          },
+          "required": ["label", "bootstrap", "href"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "bootstrap": {
+              "type": "object",
+              "properties": {
+                "buttonStyle": {
+                  "type": "string"
+                },
+                "outline": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["buttonStyle", "outline"]
+            }
+          },
+          "required": ["label", "bootstrap"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "bootstrap": {
+              "type": "object",
+              "properties": {
+                "buttonStyle": {
+                  "type": "string"
+                },
+                "outline": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["buttonStyle", "outline"]
+            }
+          },
+          "required": ["label", "bootstrap"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "bootstrap": {
+              "type": "object",
+              "properties": {
+                "buttonStyle": {
+                  "description": "Defines one of pre-defined type of button by bootstrap.",
+                  "type": "string",
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "success",
+                    "danger",
+                    "warning",
+                    "info",
+                    "light",
+                    "dark",
+                    "link"
+                  ]
+                },
+                "outline": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["buttonStyle", "outline"]
+            }
+          },
+          "required": ["label", "bootstrap"]
+        }
+      ]
+    }
+  },
+  "required": ["content", "buttons"]
+}

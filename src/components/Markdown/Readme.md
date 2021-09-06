@@ -1,3 +1,5 @@
-# some heading
+# Markdown
+This component renders a markdown file.
 
-some text
+# props
+filePath: Path of markdown file

@@ -1,19 +1,8 @@
 import navbarLargeScreen from "./simple-navbar-on-large-screen.png";
 import navbarPhone from "./simple-navbar-on-phone.png";
-import simpleNavbarExample from "./Simple-Navbar-Examples.json";
 import simpleNavbarSchema from "./Simple-Navbar-Json-Schema.json";
 import SyntaxHighlighterStandardised from "components/SyntaxHighlighter-Standardised/SyntaxHighlighter-Standardised";
-
-import {
-  github, //good light  #1
-  xcode, //good light  #2
-  googlecode, //good light - #3
-  vs, //good light
-  vs2015, //good dark
-  stackoverflowDark, //good
-  stackoverflowLight, //good
-} from "react-syntax-highlighter/dist/esm/styles/hljs";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import marked from "marked";
 
 const navItemExample = {
   label: "Docs",
@@ -52,9 +41,9 @@ const simpleNavbarDocumentation = (
     </p>
     <h1>Preview</h1>
     <h2>On Large Screens</h2>
-    <img src={navbarLargeScreen} width="80%" />
+    <img src={navbarLargeScreen} width="80%" alt="" />
     <h2>On Phones/tablets</h2>
-    <img src={navbarPhone} width="400px" />
+    <img src={navbarPhone} width="400px" alt="" />
     <p>
       This is built using{" "}
       <a
@@ -64,82 +53,63 @@ const simpleNavbarDocumentation = (
         Bootstrap Nav Bar
       </a>
     </p>
-    <h1>Configure site navigation bar</h1>
-    <h2>Site Logo</h2>
-    <ol>
-      <li>
-        Rename your logo file as <strong id="isPasted">site-logo.svg</strong>
-        &nbsp;
-      </li>
-      <li>
-        Go to <strong>website/src/assets/delivered-assets/brand</strong> folder
-      </li>
-      <li>
-        Copy your logo file <strong>site-logo.svg</strong> here. Keep the file
-        name as <strong>site-logo.svg</strong>
-      </li>
-    </ol>
-    <h2>Color Scheme</h2>
-    <ol>
-      <li>
-        Go to <strong>website/src/data/site-specific-data</strong>&nbsp;folder
-      </li>
-      <li>
-        Open <strong>site-configuration.json</strong> in editor
-      </li>
-      <li>Go to siteMenu &gt; options. It looks like this:</li>
-      <li>
-        <SyntaxHighlighterStandardised
-          language="json"
-          content={JSON.stringify(simpleNavbarSchema.examples[0], null, " ")}
-        />
-      </li>
-      <li>
-        Set the options to configure your navigation bar. Detailed explainaiton
-        is below
-      </li>
-    </ol>
+    <article dangerouslySetInnerHTML={{ __html: marked(`
+# Configure site navigation bar
+## Site Logo
+1. Rename your logo file as site-logo.svg 
+1. Go to website/src/assets/delivered-assets/brand folder
+1. Copy your logo file site-logo.svg here. Keep the file name as site-logo.svg
+
+## Color Scheme
+1. Go to website/src/data/site-specific-data folder
+1. Open site-configuration.json in editor
+1. Go to siteMenu > options. It looks like the example below
+<SyntaxHighlighterStandardised
+language="json"
+content={JSON.stringify(simpleNavbarSchema.examples[0], null, " ")}
+/>
+1. Set the options to configure your navigation bar. Detailed explainaiton is below
+`)}}
+    ></article>
+    <SyntaxHighlighterStandardised
+      language="json"
+      content={JSON.stringify(simpleNavbarSchema.examples[0], null, " ")}
+    />
     <h3>Color Scheme Options</h3>
     <SyntaxHighlighterStandardised
       language="json"
       content={JSON.stringify(simpleNavbarSchema.properties, null, "  ")}
     />
-    <h2>Menu Structure and Links</h2>
-    <p>
-      The Navigation Bar menu is a 2 level menu. At the top level there could
-      be:
-    </p>
-    <ol>
-      <li>
-        <strong>navigation item</strong>: On click, a page opens. It looks like
-        this:
-      </li>
-      <li>
-        <strong>dropdown</strong>: On click, a menu drops down
-      </li>
-    </ol>
+        <article dangerouslySetInnerHTML={{ __html: marked(`
+# Menu Structure and Links
+The Navigation Bar menu is a 2 level menu. At the top level there could be:
+- **navigation item**: On click, a page opens. It looks like this:
+- **dropdown**: On click, a menu drops down
+
+`)}}
+    ></article>
+
     <h3>Sample Navigation item</h3>
     <SyntaxHighlighterStandardised
       language="json"
       content={JSON.stringify(navItemExample, null, " ")}
     />
     <h3>Sample dropdown</h3>
-    The linkTo field can be left blank if the pages are not yet ready. A <strong>drop down</strong> could have further one level of a{" "}
-      <strong>list of items</strong>
+    The linkTo field can be left blank if the pages are not yet ready. A{" "}
+    <strong>drop down</strong> could have further one level of a{" "}
+    <strong>list of items</strong>
     <SyntaxHighlighterStandardised
       language="json"
       content={JSON.stringify(dropdownExample, null, " ")}
     />
-    <p>To configure the site menu,</p>
-    <ol>
-      <li>
-        Go to <strong>website/src/data/site-specific-data</strong> folder
-      </li>
-      <li>
-        Open <strong>site-configuration.json</strong> in an editor
-      </li>
-    </ol>
-    
+    <article dangerouslySetInnerHTML={{ __html: marked(`
+To configure the site menu,
+
+1. Go to **website/src/data/site-specific-data** folder
+1. Open **site-configuration.json** in an editor
+
+`)}}
+    ></article>
     <h1>Example JSON</h1>
     <SyntaxHighlighterStandardised
       language="json"

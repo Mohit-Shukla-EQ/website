@@ -1,4 +1,4 @@
-import { docco, dark, a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 // commented Prism as it wasa not giving colors in code.
 //import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import SyntaxHighlighter from "react-syntax-highlighter";

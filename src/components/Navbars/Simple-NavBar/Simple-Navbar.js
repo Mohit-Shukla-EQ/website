@@ -50,10 +50,10 @@ class SimpleNavbar extends React.Component {
             
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img
               src={logo}
-              /* alt="" */
+              alt="" 
               height="40px"
               
             />

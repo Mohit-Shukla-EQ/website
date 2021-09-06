@@ -3,11 +3,7 @@ import CollapsibleSidebar from "../Sidebars/Collpasible/Collapsible-Sidebar";
 import Article from "./Article"
 
 class Articles extends React.Component {
-
-
-
   render() {
-
     return (
       <div className="container-xxl my-md-4 bd-layout text-start">
         <div className="row align-items-start">
