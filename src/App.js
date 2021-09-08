@@ -1,7 +1,6 @@
 import "./App.css";
-import Page from "./components/Pages/Page/Page";
+import Page from 'components/Page/Page';
 import SimpleNavbar from "./components/Navbars/Simple-NavBar/Simple-Navbar";
-import About from "./components/About/About";
 import Articles from "components/Articles/Articles";
 import centeredHeroDocumentation from "components/Centered-Hero/documentation";
 import TextImageColumnsHeroDocumentation from "components/Text-Image-Columns-Hero/documentation"
@@ -25,12 +24,6 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            {/*           <Route path="/docs">
-            <Docs />
-          </Route> */}
             <Route path="/docs/concepts/:id" children={<Docs />} />
             <Route path="/docs/:id" children={<Docs />} />
             <Route path="/page/:id" children={<Pages />} />
@@ -45,7 +38,7 @@ function App() {
               </div>
             </Route>
             <Route path="/">
-              <Page  />
+              <Page  pageId="home-page" />
             </Route>
             
           </Switch>
@@ -71,7 +64,7 @@ function Pages() {
   // We can use the `useParams` hook here to access
   // the dynamic pieces of the URL.
   let { id } = useParams();
-  log.write(0, "App", "Pages", id)
+  log.write("Inside App.js function Pages. id: ", id)
   return (
     <div>
       <Page pageId={id} />

@@ -5,7 +5,7 @@
   "type": "object",
   "examples": [
     {
-      "options" : "{key: value}",
+      "options" : "{key: value}"
 
     }
   ],
