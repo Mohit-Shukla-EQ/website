@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JSONEditor",
+  "description": "Shows a JSON. Enables easy editing",
+  "type": "object",
+  "examples": [
+    {
+      "options" : "{key: value}",
+
+    }
+  ],
+  "properties": {
+  }
+}

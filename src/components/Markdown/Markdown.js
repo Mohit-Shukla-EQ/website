@@ -1,10 +1,10 @@
 import React from "react";
 import marked from "marked";
-import siteContent from "data/delivered-data/product-documentation/concepts/site content.md";
 
+import siteContent from "data/delivered-data/product-documentation/concepts/site content.md";
 import introduction from "data/delivered-data/product-documentation/how to/introduction.md";
 import markdownDoc from "components/Markdown/Readme.md";
-
+import addNewComponent from "actions/create-new-component/create-new-component.md";
 
 class Markdown extends React.Component {
   constructor(props) {
@@ -25,6 +25,8 @@ class Markdown extends React.Component {
       case "markdown":
         filePath = markdownDoc;
         break;
+      case "develop-new-component":
+        filePath = addNewComponent;
       default:
         break;
     }

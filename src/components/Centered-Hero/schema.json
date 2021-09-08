@@ -112,6 +112,10 @@
       "description": "CSS height. Height could be entered in pixels - like 100px. Height could also be entered as relative to screen (viewport) - 80vh. To design nice looking panels, we recommend height in vh units. To show the panel full screen, set height: 100vh. To cover 50% of screen height, set height: 50vh",
       "readMore": "https://www.w3schools.com/cssref/css_units.asp"
     },
+    "paddingTop" : {
+      "type" : "integer",
+      "description" : "CSS property for padding. Use padding to vertically adjust the content on the panel"
+    },
 
     "content": {
       "type": "object",

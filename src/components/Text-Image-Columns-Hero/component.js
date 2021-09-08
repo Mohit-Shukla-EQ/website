@@ -1,7 +1,9 @@
+import log from "libraries/Log";
 import React from "react";
 
 class TextImageColumnsHero extends React.Component {
   render() {
+    log.write(0, "TextImageColumnsHero", "render", this.props)
     return (
       <div className="container col px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">

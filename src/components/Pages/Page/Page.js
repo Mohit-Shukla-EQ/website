@@ -1,11 +1,13 @@
 import React from "react";
-import CenteredHero from "../../Centered-Hero/Cenetered-Hero";
-import TextImageColumnsHero from '../../Text-Image-Columns-Hero/Text-Image-Columns-Hero';
+import CenteredHero from "../../Centered-Hero/component";
+import TextImageColumnsHero from '../../Text-Image-Columns-Hero/component';
 import * as pageOptions from '../../../data/site-specific-data/content/pages/home-page.json';
+import log from "libraries/Log";
 
 
 class HomePage extends React.Component {
   render() {
+    log.write(0, "HomePage", "Render", this.props)
 
     return (
       <div>
